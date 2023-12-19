@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        // test outputs here
+        // Test outputs here
         Solution solution = new Solution();
 
         // 1. Two Sum
