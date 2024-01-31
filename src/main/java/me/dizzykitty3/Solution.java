@@ -17,4 +17,21 @@ public class Solution {
         }
         return new int[]{-1, -1}; // return [-1, -1] if there is no answer
     }
+
+    /**
+     * 9. Palindrome Number [Easy] #Math
+     * Given an integer x, return true if x is a palindrome, and false otherwise.
+     */
+    public boolean isPalindrome(int x) {
+        if (x < 0) return false;
+        if (x == 0) return true;
+        int temp = x;
+        int reversed = 0;
+        while (temp > 9) {
+            reversed = (reversed + (temp % 10)) * 10;
+            temp = temp / 10;
+        }
+        reversed += temp;
+        return reversed == x;
+    }
 }
